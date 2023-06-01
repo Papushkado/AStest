@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commande</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="php/process.php" method="post"></form>
+    <div class="logo">
+        <img src="Images/logo.png" alt="AS logo">
+    </div> 
+    <class class="padleft">
+        <h2>Formulaire de commande</h2>
+    </class>
+        <class class="container-2">
+        <div>
+            <class class="padleft">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required>
+        </class>
+        </div>
+        <div>
+            <class class="padleft"></class>
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </class>
+        </div>
+        <div>
+            <class class="padleft"></class>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+        </class>
+        </div>
+        <div>
+            <class class="padleft"></class>
+          <label for="choix">Choix :</label>
+          <class class="row">
+          <label for="choix1">Formule Fiches</label>
+          <input type="checkbox" id="choix1" name="choix1" value="choix1">
+          <label for="choix2">Formule fiches + Cours Vidéos</label>
+          <input type="checkbox" id="choix2" name="choix2" value="choix2">
+          <label for="choix3">Formule Fiches + Cours Vidéos + Cours Particuliers</label>
+          <input type="checkbox" id="choix3" name="choix3" value="choix3">
+        </class>
+             </class>
+        </div>
+        <div>
+            <class class="padleft"></class>
+          <label for="niveau">Niveau :</label>
+          <select id="niveau" name="niveau">
+            <option value="MPSI">MPSI</option>
+            <option value="MP">MP*/MP</option>
+            <option value="L1">L1</option>
+            <option value="L2">L2</option>
+            <option value="L3">L3</option>
+          </select>
+        </div>
+        <div>
+            <class class="padleft">
+          <label for="commentaire">Commentaire :</label>
+          <textarea id="commentaire" name="commentaire"></textarea>
+        </class>
+        </div>
+
+        <div>
+         <class class="padleft">
+          <button type="submit">Envoyer</button>
+        </class>
+        </div>
+      </form>
+    </class>
+    
+</body>
+</html>
